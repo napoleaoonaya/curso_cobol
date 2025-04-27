@@ -1,1 +1,1 @@
-# curso_cobol
+# curso_de_cobol_alura
