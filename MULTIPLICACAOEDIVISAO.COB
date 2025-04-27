@@ -1,0 +1,21 @@
+       IDENTIFICATION                  DIVISION.
+       PROGRAM-ID. MULTIPLICACAOEDIVISAO.
+       AUTHOR. NAPOLEAO.
+       ENVIRONMENT                     DIVISION.
+       DATA                            DIVISION.
+       WORKING-STORAGE                 SECTION.
+       01  WRK-NOME     PICTURE X(20) VALUE SPACES.
+       01  WRK-SALDO    PICTURE 9(5)  VALUE ZEROS.
+       PROCEDURE                       DIVISION.
+           DISPLAY "INFORME SEU SALDO".
+           ACCEPT WRK-SALDO.
+
+           DISPLAY "DOBRANDO O SALDO!".
+           MULTIPLY WRK-SALDO BY 2 GIVING WRK-SALDO.
+           DISPLAY WRK-SALDO.
+
+           DISPLAY "DIVIDINDO POR TRES O SALDO!".
+           DIVIDE WRK-SALDO BY 3 GIVING WRK-SALDO.
+           DISPLAY WRK-SALDO.
+
+           STOP RUN.
