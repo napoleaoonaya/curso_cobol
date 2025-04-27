@@ -12,6 +12,7 @@
        01  WRK-SALDO-DP PICTURE Z.ZZZ.ZZZ.Z99,99.
 
        PROCEDURE                       DIVISION.
+       
            DISPLAY "INFORME SEU SALDO".
            ACCEPT WRK-SALDO.
            DISPLAY "INFORME SEU NOME".
@@ -27,12 +28,10 @@
                MOVE WRK-SALDO TO WRK-SALDO-DP.
            DISPLAY WRK-SALDO-DP.
 
-
            DISPLAY "DOBRANDO O SALDO!".
            MULTIPLY WRK-SALDO BY 2 GIVING WRK-SALDO.
                MOVE WRK-SALDO TO WRK-SALDO-DP.
            DISPLAY WRK-SALDO-DP.
-
 
            DISPLAY "DIVIDINDO POR TRES O SALDO!".
            DIVIDE WRK-SALDO BY 3 GIVING WRK-SALDO.
